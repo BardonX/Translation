@@ -12,17 +12,16 @@ import com.tz.util.TransApi;
 /**
  * 
  * @ClassName: Query
- * @Description: ·­ÒëÇëÇóÀà
+ * @Description: ç¿»è¯‘è¯·æ±‚ç±»
  * @author: Bardon
- * @date: 2017Äê4ÔÂ30ÈÕ ÏÂÎç3:06:10
+ * @date: 2017å¹´4æœˆ30æ—¥ ä¸‹åˆ3:06:10
  * @version1.0
  */
 public class Query extends HttpServlet{
 	private static final long serialVersionUID = 1L;
-	//Ö±²¥¿ÎÀÏÊ¦ÕËºÅ
-	//³£Á¿¡£¡£¹æ·¶ÊÇ´óĞ´
-	private static final String APP_ID="20170311000042048";
-	private static final String KEY="FTMfX96LmQhL2feHpVXG";
+	//å¸¸é‡ã€‚ã€‚è§„èŒƒæ˜¯å¤§å†™ å·²éšè—idä¸key
+	private static final String APP_ID="201703110000420**";
+	private static final String KEY="FTMfX96LmQhL2feHpV**";
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
@@ -37,10 +36,10 @@ public class Query extends HttpServlet{
 	}
 	
 	/**
-	 * »ñÈ¡·­Òë½á¹û
+	 * è·å–ç¿»è¯‘ç»“æœ
 	 * @Title: getResult
 	 * @Author: Bardon
-	 * @Time: 2017Äê4ÔÂ30ÈÕ ÏÂÎç3:21:31
+	 * @Time: 2017å¹´4æœˆ30æ—¥ ä¸‹åˆ3:21:31
 	 * @params: @param query
 	 * @params: @param from
 	 * @params: @param to
@@ -52,10 +51,10 @@ public class Query extends HttpServlet{
 		TransApi api=new TransApi(APP_ID, KEY);	
 		return api.getTransResult(query, from, to);
 	}
-
+        //test
 	public static void main(String[] args) {
 		//jason
-		System.out.println(getResult("ÏÄÌì", "zh", "en"));
+		System.out.println(getResult("å¤å¤©", "zh", "en"));
 		
 	}
 	
