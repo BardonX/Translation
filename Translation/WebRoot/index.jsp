@@ -15,13 +15,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
-	 <!-- 
-      margin:外边距   上左右下  margin:100px auto 0   auto是相等      margin: 20px 0 ;上下  左右 
-      padding:内边距---不设置有默认值
-      -->
 	<meta charset="utf-8"/>
 	     <style>
 	          *{margin:0;padding=0;}
@@ -51,14 +44,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  <!-- 
-      margin:外边距   padding:内边距
-   -->
    <!-- S head -->
    <div id="head"> Java 开发多国语言互译系统</div>
    <!-- E head -->
-   
-   
+ 
    <!-- S content --> 
    <div id="content">
      <input id="text" />
@@ -124,7 +113,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     			  }else if(to=="yue"){
     				  to="cte";
     			  }
-    			  //音频标签
     			  $(".audio").click(function(){
     				  var obj1 =$('<audio src=http://fanyi.baidu.com/gettts?lan='+to+'&text='+str+'&spd=5&source=web autoplay></audio>');
     				  //地址有误
@@ -141,21 +129,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		   query();
     	   }
        });
-   </script>
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+   </script> 
   </body>
 </html>
